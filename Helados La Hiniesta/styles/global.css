@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f7e6d8;
+  font-family: 'Calibri', serif;
+  color: rgb(0, 0, 0);
+  font-size: 100%;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}

@@ -1,0 +1,410 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.titulo{
+text-align: center;
+
+
+}
+
+.subtitulo{
+text-align: center;
+margin-right: 2%;
+min-width: 200px;
+}
+
+.home {
+  padding: 1.5rem;
+  max-width: 120000px;
+  margin:  auto;
+  background-color:rgb(255, 255, 255);
+}
+
+.home article header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+@media(max-width: 900px) {
+  .home article header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.home article section {
+  display: flex;
+      margin-left: 6rem;
+      margin-right: 6rem;
+  margin-bottom: 1.25rem;
+}
+
+@media(max-width: 1100px) {
+  .home article section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.home article section picture {
+  margin-right: 3rem;
+}
+
+@media(max-width: 1100px) {
+  .home article section picture {
+    margin-right: 0;
+  }
+}
+
+.sakaguchi{
+  margin: auto;
+width: 280px;
+height: 280px;
+}
+
+
+.cita{
+ display: flex;
+ flex-direction: column;
+  margin-left: 4rem;
+    margin-right: 4rem;
+  margin-bottom: 1.25rem;
+  max-width: 400px;
+}
+.home-block {
+	margin-bottom: 3em;
+}
+.half-hot-story {
+	background: #eaeaea;
+	padding: 35px 25px;
+}
+.half-hot-story img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.half-hot-story.recipe {
+	padding-right: 0;
+}
+.half-hot-story.article h2.summary {
+	margin-top: 0
+}
+.half-hot-story.post {
+	background: none;
+	padding: 0;
+}
+div.post.featured h3 {
+padding-top: 0;
+margin-top: 0;
+font-size: 1.1em;
+}
+div.post.featured h3 a.post-category {
+font-family: "Open Sans", sans-serif;
+font-size: 1em;
+}
+
+div.blog-post-author {
+    background: #f1f6fa;
+    padding: 10px 20px;
+    text-align: right;
+}
+div.blog-post-author img {
+float: right;
+margin-left: 20px;
+}
+div.blog-post-author dt.author-name {
+font-weight: bold;
+margin: 20px 0 0  0;
+}
+
+h3 span.small {
+text-transform: lowercase;
+font-size: 90%;
+}
+h6.section-title {
+font-size: 0.95em;
+text-transform: uppercase;
+margin: 0 0 0.3em 0;
+}
+#home-page h6.section-title a {
+/*color: #235379;*/
+font-weight: 500;
+}
+/*
+#home-slider {
+border-bottom: 1px solid #cecece;
+margin-bottom: 3%;
+}
+*/
+#home-slider div.adv-block {
+border-bottom: none;
+margin-bottom: 0;
+}
+
+#slider_container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 850px;
+    height: 230px;
+    margin-top: 15px;
+}
+div.slide_container {
+    cursor: move;
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    width: 850px;
+    height: 230px
+}
+.slideCaption {
+    width: 33% !important;
+    height: auto;
+    min-height: 8% !important;
+    font-size: 110% !important;
+    padding: 1%;
+    position: absolute; 
+    bottom: 10px;
+    left: 10px;
+    background: rgba(78, 140, 185, 0.8) none repeat scroll 0% 0% !important;
+    color: #FFF;
+    font-weight: 800;
+    font-family: "Open Sans";
+}
+
+.js-video {
+height: 0;
+padding-top: 25px;
+padding-bottom: 75%;
+margin-bottom: 10px;
+position: relative;
+overflow: hidden;
+}
+
+.js-video.widescreen {
+padding-bottom: 56.34%;
+}
+
+.js-video.square-ig {
+padding-bottom: 120%;
+}
+
+.js-video.square {
+padding-bottom: 100%;
+}
+
+.js-video.vimeo {
+padding-top: 0;
+}
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+position: absolute;
+}
+
+#chef-mosaic {
+border-bottom: 5px solid #000
+}
+
+div.producto-empresa h3 {
+padding: 0;
+}
+div.producto-container {
+background: #f3f3f3;
+padding: 15px
+}
+
+a.more-recipes {
+display: block;
+margin: 10px auto;
+text-align: center
+}
+
+
+div#footer {
+margin-top: 0;
+}
+
+img.foto-preview {
+  max-width: 100%;
+  height: auto;
+  }
+  
+  div.type-news .summary a,
+  div.post .summary a {
+      color: #d73d7e !important
+  }
+  div.type-post .summary a {
+      color: #26adca  !important
+  }
+  div.type-article .summary a {
+      color: #35c59a !important
+  }
+  div.type-interview .summary a {
+      font-family: "Open Sans", sans-serif;
+      color: #116099 !important
+  }
+  
+  h5.category {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  }
+  h5.category a {
+  color: #686868 !important
+  }
+  /*
+  h4.summary a,
+  div.featured-right h2.summary a,
+  div.featured-left h2.summary a {
+      
+  font-weight: 400 !important;
+  font-size: 130%;
+  color: #000 !important
+  }
+  */
+  
+  h2.summary {
+  margin-top: 0;
+  }
+  div.featured-right h2.summary a,
+  div.featured-left h2.summary a {
+  font-size: 1.4em;
+  }
+  
+  
+  div.post.indexed {
+  margin-bottom: 3em;
+  }
+  
+  div.posts-hemeroteca ul,
+  div.posts-hemeroteca li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+  
+  
+  /**************/
+  /**** BLOG ****/
+  /**************/
+  #blog-index h4.summary {
+  margin-top: 0;
+  }
+  #blog-index h4.summary a {
+  font-size: 135%;
+  }
+  #blog-index h5.category {
+  margin: 0;
+  }
+  
+  #blog-posts-list div.post {
+  margin-bottom: 50px;
+  }
+  
+  div.blog-author,
+  div.post-author {
+  background: #d4eff4;
+  padding: 10px;
+  text-align: right
+  }
+  div.post-author {
+  padding: 5px;
+  }
+  div.blog-author img,
+  div.post-author img {
+  float: right;
+  margin-left: 10px;
+  max-width: 33%
+  }
+  div.post-author img {
+  max-width: 50px;
+  }
+  div.post-author dl {
+  font-size: 90%;
+  margin-bottom: 0;
+  }
+  dt.author-name {
+  font-weight: bold
+  }
+  
+  /*********************/
+  /**** ENTREVISTES ****/
+  /*********************/
+  .post.type-interview div.post-image-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  }
+  .post.type-interview div.interviewee {
+  position: absolute;
+  opacity: 0.8;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  color: #FFF;
+  height: 100%;
+  width: 100%;
+  }
+  .post.type-interview span.interviewee-name {
+  padding: 10px 20px;
+  background: #8F8F8F none repeat scroll 0% 0%;
+  display: inline-block;
+  margin: 30% 0px;
+  }
+  .post.type-interview div.interviewee:hover span.interviewee-name {
+  background: #afafaf
+  }
+  .post.type-interview .summary {
+  text-transform: uppercase;
+  margin-bottom: 0.25em
+  }
+  div.interview-header {
+  margin-bottom: 30px
+  }
+  
+  @media (min-width: 768px) {
+    .post.type-interview span.interviewee-name {
+      font-size: 125%;
+    }
+  }
+  @media (min-width: 992px) {
+    .post.type-interview span.interviewee-name {
+      font-size: 150%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .post.type-interview span.interviewee-name {
+      font-size: 175%;
+    }
+  }
+  
+  /*************************/
+  /**** CATEGORIA / TAG ****/
+  /*************************/
+  div.category-detail h1.section-title,
+  div.tag-detail h1.section-title {
+  margin-top: 0;
+  }
+  #posts-by-category, #posts-by-tag {
+  margin-top: 10px;
+  }
+  div.category-detail h5.category {
+  display: none
+  }
+  #category-post-list div.post,
+  #tag-post-list div.post {
+  max-width: 400px;
+  }
+  
+  
+  
+  

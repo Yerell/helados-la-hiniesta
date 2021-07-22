@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/index.css" />
+    <title>¡La Hiniesta de descuentos!</title>
+  </head>
+  <body>
+    <header>
+      <img class="fflogo" src='https://i.postimg.cc/Njfd2CPg/Captura-auto-x2.png' border='0' alt='Captura-auto-x2'/></a>
+      <nav class="links" style="--items: 5">
+        <a href="/">Inicio</a>
+        <a href="/pages/quienes-somos">Quienes somos</a>
+        <a href="/pages/promocion">Promoción</a>
+        <a href="https://menorquina.com/" target="_blank">Colaborador</a>
+        <a href="/pages/trabaja-con-nosotros">Trabaja con nosotros</a>
+        <span class="line"></span>
+      </nav>
+    </header>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+
+<!-- Nav -->
+<nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+  <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+  </div>
+</nav>
+
+
+<!-- Main -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">Pinkie Love Cup</h4>
+  <p class="card-text">Price: 3€</p>
+  <a href="#" data-name="Orange" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="https://cocina-casera.com/wp-content/uploads/2016/05/banana-split.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">Banana Split</h4>
+  <p class="card-text">Price: 2.22€</p>
+  <a href="#" data-name="Banana" data-price="2.22" class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+<img class="card-img-top" src="https://www.decoestilo.com/wp-content/uploads/2012/02/corazones_san_valentin_1.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">Corazones Helados</h4>
+  <p class="card-text">Price: 5€</p>
+  <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <table class="show-cart table">
+        
+      </table>
+      <div>Total price: $<span class="total-cart"></span></div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Order now</button>
+    </div>
+  </div>
+</div>
+</div> 
+
+
+
+      
+
+    <div id="newsspec-19854-app" class="news-app-promo">
+      <div class="news-app-promo-text">
+          <div class="news-app-promo-text__tagline">Reune puntos con cada compra.</div><br>
+          <div class="news-app-promo-text__download">¡Descarga ahora la APP y consigue ofertas increibles!</div>
+      </div>
+      <div class="news-app-promo__section">
+          <div class="news-app-promo-subsection">
+              <img class="news-app-promo__bbc-logo" src="https://i.ibb.co/D5M6tnz/bssss.png" alt="bssss">
+          </div>
+          <div class="news-app-promo-subsection">
+              <a class="news-app-promo-subsection--link news-app-promo-subsection--playstore" href="https://play.google.com/store?hl=en" target="_parent">
+                  <img class="news-app-promo__play-store" src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/google_play_store.svg" width="161" height="auto" border="0">
+              </a>
+              <a class="news-app-promo-subsection--link news-app-promo-subsection--appstore" href="https://www.apple.com/app-store/" target="_parent">
+                  <img class="news-app-promo__app-store" src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/ios_app_store.svg" width="161" height="auto" border="0">
+              </a>
+          </div>
+      </div>
+      <div class="news-app-promo__section">
+  
+      </div>
+  </div>
+    <footer>
+      <div class="social-media-links">
+        <ul>
+          Helados la Hiniesta os espera con los mejores helados tradicionales de Sevilla. Visitad nuestras redes sociales y disfrutad de nuestras promociones.
+          <li>
+            <!-- twitter -->
+            <a href="#">
+              <svg
+                class="glow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="st0"
+                  d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <path
+                  class="st0"
+                  d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <!-- facebook -->
+            <a href="#">
+              <svg
+                class="glow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="st0"
+                  d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <path
+                  class="st0"
+                  d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <!-- youtube -->
+            <a href="#">
+              <svg
+                class="glow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="st0"
+                  d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <path
+                  class="st0"
+                  d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <!-- instagram -->
+            <a href="#">
+              <svg
+                class="glow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="st0"
+                  d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z"
+                />
+                <path
+                  class="st0"
+                  d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z"
+                />
+                <circle class="st0" cx="22.9" cy="7.1" r="1.8" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <path
+                  class="st0"
+                  d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z"
+                />
+                <path
+                  class="st0"
+                  d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z"
+                />
+                <circle class="st0" cx="22.9" cy="7.1" r="1.8" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>
